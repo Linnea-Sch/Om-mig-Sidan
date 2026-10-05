@@ -34,6 +34,7 @@ p {
 }
 
 p {
+    /* Ändra så max-width är 30 rem så att radbrytet blir bra och läsbart, men fortfarande centrerat på sidan */
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -79,10 +80,13 @@ article {
 }
 
 button:focus,
+button:hover,
 a:focus,
-video:focus {
-    border: 3px solid var(--shadow);
-    box-shadow: 0.5rem 0.5rem 0.2rem var(--primary);
+a:hover,
+video:focus,
+video:hover {
+  border: 3px solid var(--shadow);
+  box-shadow: 0.5rem 0.5rem 0.2rem var(--primary);
 }
 
 /* -- Headern och det längst upp på sidan -- */
@@ -113,7 +117,8 @@ header nav {
   justify-content: center;
 }
 
-.jumpButton,  button {
+.jumpButton,
+button {
   background-color: var(--primary);
   color: var(--textOnPrimary);
   text-align: center;
@@ -121,7 +126,8 @@ header nav {
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 0.2rem 0.2rem var(--shadow);
-  border:0;
+  border: 0;
+  width: 100%;
 }
 
 /*  -- Fritid och början på privat -- */
@@ -182,10 +188,10 @@ article.favoriter {
   justify-content: center;
 }
 
-.favoriter.dance{
-    background: var(--shadow);
-    color: var(--textOnPrimary);
-    border-radius: 2rem;
+.favoriter.dance {
+  background: var(--shadow);
+  color: var(--textOnPrimary);
+  border-radius: 2rem;
 }
 
 .favoriter table,
@@ -224,7 +230,46 @@ td {
 
 .portfolio .projekt p {
   margin: 0.1rem;
-  max-width: 40rem;
+  max-width: 30rem;
+}
+
+/*  -- Footer och kontakt -- */
+footer {
+  background-color: var(--primary);
+  color: var(--textOnPrimary);
+  padding: 4rem;
+}
+
+footer h2 {
+  margin: 0 0 2rem;
+  border-bottom: 5px dotted var(--textOnPrimary);
+}
+
+footer a:focus,
+footer a:hover {
+  box-shadow: 0.5rem 0.5rem 0.2rem var(--shadow);
+}
+
+footer li {
+  margin: 1rem;
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+a {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--textOnPrimary);
+  color: var(--text);
+  width: fit-content;
+}
+
+ul {
+  padding: 0;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 @media (width<30rem) {
