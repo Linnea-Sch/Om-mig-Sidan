@@ -21,7 +21,6 @@ songButton.addEventListener("click", function(){
     
 
     if (playing){
-        /* Pausa låten */
         song.pause()
         playing = false
         /* Ta bort bilden */

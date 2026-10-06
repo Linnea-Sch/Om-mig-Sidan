@@ -34,7 +34,7 @@ p {
 }
 
 p {
-    /* Ändra så max-width är 30 rem så att radbrytet blir bra och läsbart, men fortfarande centrerat på sidan */
+  /* Ändra så max-width är 30 rem så att radbrytet blir bra och läsbart, men fortfarande centrerat på sidan */
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -228,7 +228,8 @@ td {
   justify-content: center;
 }
 
-.portfolio .projekt p {
+.portfolio .projekt p,
+.erfarenhet p {
   margin: 0.1rem;
   max-width: 30rem;
 }
@@ -264,6 +265,7 @@ a {
   background-color: var(--textOnPrimary);
   color: var(--text);
   width: fit-content;
+  max-width: 100%;
 }
 
 ul {
