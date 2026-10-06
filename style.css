@@ -182,6 +182,10 @@ figure {
   margin: 0;
 }
 
+figure img{
+  order: 0;
+}
+
 article.favoriter {
   display: flex;
   flex-flow: row wrap;
