@@ -12,6 +12,7 @@ songButton.addEventListener("click", function(){
     
     const favoriter = document.querySelector("article.favoriter")
 
+    /* Här skapar vi katt-bilden/gifen med de html-attribut som behövs för att den ska se bra ut när den syns på sidan */
     var dancingCatGif = new Image()
     dancingCatGif.setAttribute("src","./Bilder, videor och ljud/catjam-cat.gif" )
     dancingCatGif.setAttribute("width", 397)
@@ -23,7 +24,7 @@ songButton.addEventListener("click", function(){
     if (playing){
         song.pause()
         playing = false
-        /* Ta bort bilden */
+        /* Ta bort kattbilden */
         dancingCatGif = favoriter.querySelector(".dancingCat")
         favoriter.removeChild(dancingCatGif)
         /* Ändra knapptexten */
@@ -36,6 +37,7 @@ songButton.addEventListener("click", function(){
         songButton.innerText = "Pausa ANIME MIG"
         song.play()
         playing = true
+        /* Gör så att kattbilden syns/finns på sidan och inte bara i koden */
         favoriter.appendChild(dancingCatGif)
         favoriter.classList.add("dance")
     }
