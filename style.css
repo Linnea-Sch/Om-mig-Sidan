@@ -239,6 +239,11 @@ td {
   max-width: 30rem;
 }
 
+.erfarenhet p a {
+  background: none;
+  padding:0;
+}
+
 /*  -- Footer och kontakt -- */
 footer {
   background-color: var(--primary);
