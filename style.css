@@ -64,7 +64,6 @@ img {
   margin: 1rem;
   max-width: 20rem;
   max-height: 20rem;
-  order: 2;
 }
 
 section,
@@ -117,7 +116,7 @@ header nav {
   justify-content: center;
 }
 
-.jumpButton,
+.button,
 button {
   background-color: var(--primary);
   color: var(--textOnPrimary);
@@ -132,44 +131,44 @@ button {
 
 /*  -- Fritid och början på privat -- */
 
-.fritid {
+.hobbies {
   display: flex;
   flex-direction: column;
   margin: 2rem 6rem;
 }
 
-.fritid div {
+.hobbies div {
   display: flex;
   flex-flow: row wrap;
   justify-content: end;
 }
 
-.fritid ul {
+.hobbies ul {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
 }
 
-article.fritid {
+article.hobbies {
   display: grid;
   grid-template: 3rem 1fr / 1fr 1fr;
   max-width: max-content;
 }
 
-.fritid h3 {
+.hobbies h3 {
   grid-column: 1 / -1;
   text-align: center;
 }
 
 /* -- Allergier -- */
-article.allergier {
+article.allergies {
   display: flex;
   flex-flow: row wrap;
   column-gap: 2rem;
   justify-content: space-evenly;
 }
 
-.allergier section {
+.allergies section {
   border: none;
   max-width: 20rem;
 }
@@ -180,26 +179,26 @@ figure {
   align-items: center;
   max-width: 100%;
   margin: 0;
-  order:2;
+  order: 2;
 }
 
-figure img{
+figure img {
   order: 0;
 }
 
-article.favoriter {
+article.favorites {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.favoriter.dance {
+.favorites.dance {
   background: var(--shadow);
   color: var(--textOnPrimary);
   border-radius: 2rem;
 }
 
-.favoriter table,
+.favorites table,
 th,
 td {
   padding: 0.5rem;
@@ -208,12 +207,12 @@ td {
   max-width: 40rem;
 }
 
-.favoriter tr:nth-child(even) {
+.favorites tr:nth-child(even) {
   background-color: var(--textOnPrimary);
   color: var(--text);
 }
 
-.favoriter tr:nth-child(odd) {
+.favorites tr:nth-child(odd) {
   background-color: white;
   color: var(--text);
 }
@@ -223,25 +222,35 @@ td {
 }
 
 /* --- Erfarenhet ---*/
+.experience img{
+  order:0
+}
+
+
+.experience p a {
+  background: none;
+  padding: 0;
+}
 
 /* -- Portfolio -- */
 
-.portfolio article.projekt {
+.portfolio article.project,
+.experience article {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
-.portfolio .projekt p,
-.erfarenhet p {
+.portfolio .project p,
+.experience article p {
   margin: 0.1rem;
-  max-width: 30rem;
+  max-width: 40rem;
 }
 
-.erfarenhet p a {
-  background: none;
-  padding:0;
+.project a{
+  margin: 0.5rem;
 }
 
 /*  -- Footer och kontakt -- */
@@ -269,13 +278,14 @@ footer li {
   align-items: center;
 }
 
-a {
-  padding: 1rem;
-  border-radius: 10px;
+footer a {
+  padding: 1.2rem;
+  border-radius: 20px;
   background-color: var(--textOnPrimary);
   color: var(--text);
   width: fit-content;
   max-width: 100%;
+  box-shadow: 1px 4px 5px var(--text);
 }
 
 ul {
@@ -285,20 +295,24 @@ ul {
 }
 
 @media (width<30rem) {
-  article.fritid {
+  article.hobbies {
     grid-template: 3rem 1fr / 1fr;
   }
 
-  .fritid {
+  .hobbies {
     margin: 1rem 0;
   }
 
-  .fritid div {
+  .hobbies div {
     flex-flow: column wrap;
     justify-content: center;
   }
 
   article {
     margin: 0.2rem;
+  }
+
+  video {
+    max-width: 20rem;
   }
 }

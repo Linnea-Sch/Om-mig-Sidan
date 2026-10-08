@@ -40,13 +40,13 @@
 
           <nav>
             <!-- Egentligen borde detta ändras till knappar eftersom det inte länkar ut från sidan -->
-            <a class="jumpButton" href="#erfarenhet"
+            <a class="button" href="#erfarenhet"
               >Läs om min utbildning och tidigare erfarenhet!</a
             >
-            <a class="jumpButton" href="#portfolio"
+            <a class="button" href="#portfolio"
               >Se mina tidigare projekt!</a
             >
-            <a class="jumpButton" href="#linkedIn">Kontakta mig!</a>
+            <a class="button" href="#linkedIn">Kontakta mig!</a>
           </nav>
         </div>
       </header>
@@ -59,10 +59,10 @@
           energi.
         </p>
 
-        <article class="fritid">
+        <article class="hobbies">
           <h3>Fritidsintressen</h3>
           <div>
-            <!-- Hitta rätt width och height tack -->
+            <!-- Hitta rätt width och height på bilderna tack -->
             <img
               width="400"
               height="100"
@@ -116,7 +116,7 @@
         </article>
 
         <!--TODO: Typ gör ett interaktivt litet spel där man kan söka/gissa på någonting och se ifall jag är allergisk mot det eller inte-->
-        <article class="allergier">
+        <article class="allergies">
           <h3>Allergier</h3>
           <p>
             En liten fun fact är att jag är allergisk mot ganska många saker.
@@ -182,7 +182,7 @@
           </figure>
         </article>
 
-        <article class="favoriter">
+        <article class="favorites">
           <h3>Favoriter</h3>
           <p>
             Jag kan stundtals ha starka åsikter. Jag vet vad jag vill och vad
@@ -277,9 +277,10 @@
         </article>
       </section>
 
-      <section class="erfarenhet">
-        <h2 id="erfarenhet">Erfarenhet och utbildning</h2>
-        <h3>Medieteknik på KTH i 2 år</h3>
+      <section class="experience">
+        <h2 id="experience">Erfarenhet och utbildning</h2>
+        <article>
+          <h3>Medieteknik på KTH i 2 år</h3>
         <img
           src="Bilder, videor och ljud/FotoN bild.jpg"
           alt="Linnéa sitter bakom ett bord med kameror, iklädd en frack och schmeck."
@@ -317,6 +318,8 @@
           längre ner </a>. Vi gick även runt och var faddrar och fotade allt som
           hände.
         </p>
+        </article>
+        
       </section>
 
       <section class="portfolio">
@@ -326,7 +329,7 @@
           inom olika kurser.
         </p>
 
-        <article class="projekt" id="MTGN25">
+        <article class="project" id="MTGN25">
           <!--TODO: Lägg till fler verisoner av src, som ogg osv och gör en bättre beskrivning av alt, samt vad som ska stå ifall hemsidan inte kan visa videon-->
           <!-- TODO: Här kan man även lägga in interaktivitet för att kunna klicka mellan olika bilder -->
           <video
@@ -354,12 +357,14 @@
             hemsidan bättre, men jag hade velat göra så att den såg bättre ut
             och hade bättre UX ifall jag hade mer tid.
           </p>
-
-          <a href="https://github.com/MediasMottagning/MTGN25" target="_blank">Se projektet på Github</a>
-          <a href="https://www.figma.com/design/E9WvJFx9fXR8AbrWIqJUM4/MTGN-25?node-id=0-1&p=f&t=ztj5OwZ7AahF2Pbt-0" target="_blank">Se projektets design i Figma</a>
+          <div>
+            <a class="button" href="https://github.com/MediasMottagning/MTGN25">Se projektet på Github</a>
+            <a class="button" href="https://www.figma.com/design/E9WvJFx9fXR8AbrWIqJUM4/MTGN-25?node-id=0-1&t=shn88OMYjW25gx4R-1">Se projektets design i Figma</a>
+          </div>
+          
         </article>
 
-        <article class="projekt">
+        <article class="project">
           <h3>En logotyp för en Kpop-dansgrupp</h3>
           <img
             src="Bilder, videor och ljud/orbits.png"
@@ -398,15 +403,14 @@
         <li id="linkedIn">
           <h3>LinkedIn:</h3>
           <a
-            target="_blank"
             href="https://www.linkedin.com/in/linnea-schogarne/"
             >linkedin.com/in/linnea-schogarne/</a
           >
         </li>
 
-        <li id="Github">
+        <li id="github">
           <h3>Github:</h3>
-          <a target="_blank" href="https://github.com/Linnea-Sch"
+          <a href="https://github.com/Linnea-Sch"
             >github.com/Linnea-Sch</a
           >
         </li>
@@ -420,7 +424,7 @@
 
         <li id="phone_nmb">
           <h3>Telefonnummer:</h3>
-          <a href="callto:+46761841480">0761841480</a>
+          <a href="tel:+46761841480">0761841480</a>
         </li>
       </ul>
     </footer>

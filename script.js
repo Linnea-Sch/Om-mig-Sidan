@@ -10,7 +10,7 @@ playing = false
 
 songButton.addEventListener("click", function(){
     
-    const favoriter = document.querySelector("article.favoriter")
+    const favoriter = document.querySelector("article.favorites")
 
     /* Här skapar vi katt-bilden/gifen med de html-attribut som behövs för att den ska se bra ut när den syns på sidan */
     var dancingCatGif = new Image()
@@ -24,7 +24,7 @@ songButton.addEventListener("click", function(){
     if (playing){
         song.pause()
         playing = false
-        /* Ta bort kattbilden */
+        /* Tar bort kattbilden */
         dancingCatGif = favoriter.querySelector(".dancingCat")
         favoriter.removeChild(dancingCatGif)
         /* Ändra knapptexten */
