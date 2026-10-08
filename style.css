@@ -126,7 +126,6 @@ button {
   padding: 1rem;
   box-shadow: 0.2rem 0.2rem var(--shadow);
   border: 0;
-  width: 100%;
 }
 
 /*  -- Fritid och början på privat -- */
@@ -158,6 +157,10 @@ article.hobbies {
 .hobbies h3 {
   grid-column: 1 / -1;
   text-align: center;
+}
+
+#songButton{
+  width: 90%;
 }
 
 /* -- Allergier -- */
