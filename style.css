@@ -18,7 +18,6 @@ h2,
 h3,
 h4 {
   font-family: "Special Elite", system-ui;
-  /* font-family: "Limelight", sans-serif; */
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -34,7 +33,6 @@ p {
 }
 
 p {
-  /* Ändra så max-width är 30 rem så att radbrytet blir bra och läsbart, men fortfarande centrerat på sidan */
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -256,6 +254,12 @@ td {
   margin: 0.5rem;
 }
 
+.project div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 /*  -- Footer och kontakt -- */
 footer {
   background-color: var(--primary);
@@ -307,8 +311,8 @@ ul {
   }
 
   .hobbies div {
-    flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
   }
 
   article {
@@ -317,5 +321,9 @@ ul {
 
   video {
     max-width: 20rem;
+  }
+
+  footer{
+    padding: 2rem;
   }
 }
